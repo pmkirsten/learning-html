@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formularios</title>
+</head>
+<body>
+    <nav><a href="/index.html">← Volver atrás</a></nav>
+    <form action="/forms/index.html" method="get">
+        <ul>
+            <li>
+                <label for="login">Usuario: </label>
+                <input name="login" type="text" placeholder="Tu usuario de la aplicación"/>
+            </li>
+            <li>
+                <label for="password">Contraseña: </label>
+                <input name="password" type="password"  placeholder="Tu contraseña">
+            </li>
+            <li>
+                <label for="mail">Mail: </label>
+                <input name="mail" type="email" placeholder="Tu correo electrónico">
+            </li>
+            <li>
+                <label for="estimation" >Estimación:</label>
+                <select name="estimation">
+                    <option value="1">XS</option>
+                    <option value="2">S</option>
+                    <option value="3">M</option>
+                    <option value="5">L</option>
+                    <option value="8">XL</option>
+                </select>
+            </li>
+            <li>
+                <label for="payment" >Tipo de pago:</label>
+                <input name="payment" type="radio" value="credit-card">Trajeta de crédito</input>
+                <input name="payment" type="radio" value="paypal">Paypal</input>
+                <input name="payment" type="radio" value="bank-transfer">Transferencia bancaria</input>
+            </li>
+            <li>
+                <label for="contact" >Contacto:</label>
+                <input name="payment" type="checkbox" value="email">Correo electrónico</input>
+                <input name="payment" type="checkbox" value="sms">SMS</input>
+                <input name="payment" type="checkbox" value="call">Llamada telefónica</input>
+            </li>
+        </ul>
+        <button type="submit">Enviar</button>
+        <button type="reset">Limpiar</button>
+    </form>
+</body>
+</html>
